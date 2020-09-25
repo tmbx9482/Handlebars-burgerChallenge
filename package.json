@@ -1,0 +1,25 @@
+{
+  "name": "handlebars-burgerchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmbx9482/Handlebars-burgerChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmbx9482/Handlebars-burgerChallenge/issues"
+  },
+  "homepage": "https://github.com/tmbx9482/Handlebars-burgerChallenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
