@@ -1,4 +1,4 @@
-// For more reference on how this page became about checkout link:https://youtu.be/msvdn95x9OM
+
 // Require Express
 let express = require("express");
 // Local Host connection
