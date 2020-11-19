@@ -1,9 +1,8 @@
 // require mysql
 let mysql = require("mysql");
-let connection;
 
 // info on mysql
-
+let connection;
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -27,5 +26,5 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId);
 });
 
-// Export connection for our ORM 
+// Export connection for our ORM file
 module.exports = connection;

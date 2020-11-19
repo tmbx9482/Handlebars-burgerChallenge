@@ -21,7 +21,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Having the routes import the server.js
-let routes = require('//Still to make updates with file link and file "burgers_controller.js');
+let routes = require('./controllers/burgers_controller');
 
 app.use(routes);
 

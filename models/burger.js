@@ -1,7 +1,6 @@
 //Import the ORM 
 let orm = require("../config/orm.js");
 
-// Burger object
 let burger = {
     // Taking all the data from seeds.db 
     selectAll: function (cb) {
