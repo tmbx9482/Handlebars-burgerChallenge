@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 7405e48bfcf504aa1656c7ca7a7ed7c4c77d26a4
 // Require Express
 let express = require("express");
 // Local Host connection
