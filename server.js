@@ -1,4 +1,3 @@
-// For more reference on how this page became about checkout link:https://youtu.be/msvdn95x9OM
 // Require Express
 let express = require("express");
 // Local Host connection
@@ -7,8 +6,8 @@ let PORT = process.env.PORT || 4000;
 let app = express();
 
 //static content from the "public" directory is enable for app.
-// app.use(express.static("public"));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static("public"));
+//app.use(express.static(__dirname + '/public'));
 
 // Parse application => JSON
 app.use(express.urlencoded({ extended: true }));

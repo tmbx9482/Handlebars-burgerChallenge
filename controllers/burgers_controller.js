@@ -12,7 +12,7 @@ router.get("/", function (req, res) {
 
 // GET
 router.get("/burgers", function (req, res) {
-    burger.all(function (burgerData) {
+    burger.selectAll(function (burgerData) {
         res.render("index", { burger_data: burgerData });
     });
 });
