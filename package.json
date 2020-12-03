@@ -11,16 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/tmbx9482/Handlebars-burgerChallenge.git"
   },
-  "author": "",
+  "author": "Troy B",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tmbx9482/Handlebars-burgerChallenge/issues"
-  },
   "homepage": "https://github.com/tmbx9482/Handlebars-burgerChallenge#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "body-parser": "^1.15.0"
   }
 }

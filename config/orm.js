@@ -71,5 +71,6 @@ let orm = {
     },
 };
 
+
 // export the object
 module.exports = orm;
