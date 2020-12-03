@@ -10,7 +10,7 @@ let burger = {
         });
     },
     // cols and vals beening executed from data entries
-    insertOne: function (cols, vals, cb) {
+    insertOne: function (name, cb) {
         orm.insertOne("burgers", cols, vals, function (res) {
             cb(res);
         });

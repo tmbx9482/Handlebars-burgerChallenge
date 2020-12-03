@@ -13,12 +13,14 @@ router.get("/", function (req, res) {
 // GET
 router.get("/burgers", function (req, res) {
     burger.selectAll(function (burgerData) {
+        console.log(burgerData)
         res.render("index", { burger_data: burgerData });
     });
 });
 
 // POST
 router.post("/burgers/insertOne", function (req, res) {
+    console.log("post here")
     burger.insertOne(req.body.burger_name, function (result) {
         console.log(result);
         res.redirect("/");

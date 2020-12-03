@@ -10,8 +10,6 @@
     {{/each}}
 </ul>
 
-<h2>Burgers that were Devoured!</h2>
-
 <ul>
     {{#each burgers}}
     {{#if devoured}}
@@ -20,13 +18,46 @@
     {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+<h2>Copy and Paste the Burger Choice</h2>
+{{!-- <p>1.Cheeseburger <br>
+    2.Big-Mac burger<br>
+    3.Veggy burger<br>
+    4.Whooper<br>
+    5.Jalapeno Cheeseburger<br>
+    6.Bacon Porkburger<br>
+    7.Mini Cheeseburger</p> --}}
 
-    <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="burger_name">
+
+
+{{#each burger_data}}
+<div>
+    {{this.burger_name}}
+</div>
+{{/each}}
+
+<form class="create-form" action='/burgers/insertOne' method="POST">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="form-group col-md-6">
+            <center><label for="newburger" class="submitFont">
+                    <h3>Request a new burger!</h3>
+                </label></center>
+            <textarea class="form-control" type="text" id="addburger" value="" name="burger_name">
+                </textarea>
+        </div>
+
+        <div class="col-md-3"></div>
     </div>
-
-    <button type="submit">Add Burger</button>
+    <center>
+        <button type="submit" class="btn btn-primary" id="addburger">Add Burger!
+            <span class="fa fa-thumbs-up"></span>
+        </button>
+    </center>
 </form>
+<br>
+</div>
+
+<script>
+
+
+</script>
