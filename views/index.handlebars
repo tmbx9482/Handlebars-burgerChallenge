@@ -3,27 +3,29 @@
 <h2>List your favorite burgers and eat them!</h2>
 
 <ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=false}}
+    {{#each burger_data}}
+    {{#unless this.devoured}}
+    <pre>{{this.burger_name}}</pre>
     {{/unless}}
     {{/each}}
 </ul>
 
+<h2> Burger Choice</h2>
+
 <ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devoured=true}}
+    {{#each burger_data}}
+    {{#if this.devoured}}
+    <pre>{{this.burger_name}}</pre>
     {{/if}}
     {{/each}}
 </ul>
 
-<h2>Copy and Paste the Burger Choice</h2>
-{{#each burger_data}}
+
+{{!-- {{#each burger_data}}
 <div>
     {{this.burger_name}}
 </div>
-{{/each}}
+{{/each}} --}}
 
 <form class="create-form" action='/burgers/insertOne' method="POST">
     <div class="row">
@@ -32,7 +34,7 @@
             <center><label for="newburger" class="submitFont">
                     <h3>Request a new burger!</h3>
                 </label></center>
-            <textarea class="form-control" type="text" id="addburger" value="" name="burger_name">
+            <textarea class="form-control" type="text" id="enterburger" value="" name="burger_name">
                 </textarea>
         </div>
 
@@ -46,8 +48,3 @@
 </form>
 <br>
 </div>
-
-<script>
-
-
-</script>
